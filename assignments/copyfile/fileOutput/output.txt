@@ -1,0 +1,5 @@
+all of the text file
+
+allows new lines
+
+etc.
