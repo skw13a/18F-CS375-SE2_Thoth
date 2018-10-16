@@ -8,7 +8,9 @@
  */
  
 import java.nio.file.*;
-import java.io.IOException;
+import java.io.IOException; 
+import java.io.BufferedReader; 
+import java.io.InputStreamReader;
 
 public class CopyFolder {
 
@@ -20,11 +22,20 @@ public class CopyFolder {
 			StandardCopyOption.COPY_ATTRIBUTES
 		};
 		
-		Path source = Paths.get("input");
-		Path out = Paths.get("output");
-		try 
+		System.out.println("Please input the name of the folder you wish to copy: ");
+		
+		try
 		{
+			BufferedReader reader = new BufferedReader(new InputStreamReader(System.in)); 
+		
+			String in = reader.readLine();
+			String output = "output/" + in;
+		
+			Path source = Paths.get(in);
+			Path out = Paths.get(output);
 			Files.copy(source, out, options);
+			System.out.println("");
+			System.out.println("The folder you wished to copy has been placed in output/");
 		}
 		catch(IOException e)
 		{
