@@ -86,6 +86,7 @@ public class CopyAll {
 			
 			File inFile = inPath.toFile();
 			
+			Files.copy(inPath, outPath, options);
 			copyDirectory(inFile, outPath, options);
 			
 			System.out.println("");
