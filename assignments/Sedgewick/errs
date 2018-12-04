@@ -1,0 +1,33 @@
+buildTrie parent 1 1
+buildTrie parent 1 2
+buildTrie parent 2 2
+buildTrie parent 3 4
+buildTrie parent 5 7
+buildCode A 0
+buildCode D 100
+buildCode ! 1010
+buildCode C 1011
+buildCode R 110
+buildCode B 111
+FTA
+FFTD
+FT!
+TC
+FTR
+TB
+writeTrie
+writing input length 12
+encoding... 
+Char A 0
+Char B 111
+Char R 110
+Char A 0
+Char C 1011
+Char A 0
+Char D 100
+Char A 0
+Char B 111
+Char R 110
+Char A 0
+Char ! 1010
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
